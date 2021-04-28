@@ -57,21 +57,8 @@ def clientThread(): #Thread del cliente, se conectará a la dirección local y e
   s_client.close()
   sys.exit()
  
- 
 
 _thread.start_new_thread(serverThread, ())#Creamos el thread del servidor
 time.sleep(2)#Esperamos cierto tiempo, para que el servidor se inicie correctamente
 _thread.start_new_thread(clientThread, ())#Creamos el thread para el cliente
-
-
-
- 
-
-
-
-
-
-
-
-
 
